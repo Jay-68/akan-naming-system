@@ -12,26 +12,22 @@
 
 <body class="container">
   <nav>
-    <ul class="nav">
-      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-    </ul>
-  </nav>
-  <div>
-    <h3>Fill the form to get your Akan Name:</h3>
-    <form action="">
-      <div class="form-row">
-        <label for="day" class="col-form-label">Day</label>
-        <input type="number" name="" id="day" placeholder="DD" class="form-control col-2">
-        <label for="month" class="col-form-label">Month</label>
-        <input type="number" name="" id="month" placeholder="MM" class="form-control col-2">
-        <label for="year" class="col-form-label">Year</label>
-        <input type="number" name="" id="year" placeholder="YYYY" class="form-control col-2">
-      </div> <br>
-      <input type="button" value="Submit" class="btn btn-primary">
-    </form>
-  </div>
-  <script src="js/index.js"></script>
+    <div>
+      <h3>Fill the form to get your Akan Name:</h3>
+      <form action="">
+        <div class="form-row">
+          <label for="day" class="col-form-label">Day</label>
+          <input type="number" name="" id="day" placeholder="DD" class="form-control col-2">
+          <span id="dayError"></span>
+          <label for="month" class="col-form-label">Month</label>
+          <input type="number" name="" id="month" placeholder="MM" class="form-control col-2">
+          <label for="year" class="col-form-label">Year</label>
+          <input type="number" name="" id="year" placeholder="YYYY" class="form-control col-2">
+        </div> <br>
+        <button type="submit" onclick="submitButton()" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
