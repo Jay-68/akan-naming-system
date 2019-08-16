@@ -5,5 +5,11 @@ function submitButton() {
 
   if (day == '' || day > 31) {
     alert('Enter correct day');
+  } else if (month == '' || month > 12) {
+    alert('month error');
+  } else if (year == '' || year > 2019) {
+    alert('year error');
+  }else{
+    alert('check your data');
   }
 }
