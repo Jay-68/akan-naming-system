@@ -2,16 +2,37 @@ function submitButton() {
   let day = document.getElementById("day").value;
   let month = document.getElementById("month").value;
   let year = document.getElementById("year").value;
+  let century = year.slice(0, 2);
+  alert(century);
+  let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+  let femaleNames = ['Akosua', 'Adwwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+  let gender = document.getElementsByName("gender").value;
 
-  if (day == '' || day > 31) {
-    alert('Enter correct day');
-  } else if (month == '' || month > 12) {
-    alert('month error');
-  } else if (year == '' || year > 2019) {
-    alert('year error');
-  } else {
-    alert('check your data');
+  let dayOfTheWeek = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
+
+  let dayOfBirth = Math.floor(dayOfTheWeek);
+  alert(dayOfBirth);
+
+  //form validation
+  if (day <= 0 || day > 31) {
+    alert('Enter valid Day');
+  } else if (month <= 0 || month > 12) {
+    alert('Enter valid Month');
+  } else if (year > 2019 || year <= 0) {
+    alert('Enter valid year');
+  } else if (gender=="male"){
+    alert('you are male!!');
   }
+
+  // if (day == '' || day > 31) {
+  //   alert('Enter correct day');
+  // } else if (month == '' || month > 12) {
+  //   alert('month error');
+  // } else if (year == '' || year > 2019) {
+  //   alert('year error');
+  // } else {
+  //   alert('check your data');
+}
 // let maleNames=[]
 
 //   var dD = Number(prompt("Enter date:"));
