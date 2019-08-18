@@ -1,3 +1,24 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-image: url(https://images.pexels.com/photos/793166/pexels-photo-793166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: 100% 100%;
+}
+.container{
+  padding-top: 10px;
+}
+.card-header{
+  padding-bottom: 10px;
+  background-color:#32886a;
+}
+.card-body{
+  background-color: #e5ca63;
+}
+#naming{
+  padding-bottom: 68px;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
