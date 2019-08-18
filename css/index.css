@@ -1,26 +1,42 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-body{
+
+body {
   background-image: url(https://images.pexels.com/photos/793166/pexels-photo-793166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: 100% 100%;
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
 }
-.container{
+
+.container {
   padding-top: 10px;
 }
-.card-header{
+
+.card-header {
   padding-bottom: 10px;
-  background-color:#32886a;
+  background-color: #32886a;
 }
-.card-body{
+
+.card-body {
   background-color: #e5ca63;
 }
-#naming{
-  padding-bottom: 68px;
+
+#naming {
+  padding-bottom: 44px;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+
+.formSection {
+  width: 50%;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+.formSection button {
+  margin: 10px 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

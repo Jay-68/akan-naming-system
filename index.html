@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Ghanaian Naming System</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
@@ -13,7 +14,7 @@
 <body class="container">
   <div id="about" class="row">
     <div class="col-md-3 col-sm-12">
-      <h3 class="text-center card-header">Background</h3>
+      <h3 class="text-center card-header font-weight-bold">Background</h3>
       <div class="card-body">
         <p>
           The naming system of the Akan people is as distinct as that which elders in Togo (the Ewe people), the Ga
@@ -26,7 +27,7 @@
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
-      <h3 class="text-center card-header">The Naming System</h3>
+      <h3 class="text-center card-header font-weight-bold">The Naming System</h3>
       <div id="naming" class="card-body">
         <p>
           The Akan people use the Kwa language group’s system of timekeeping, which is based on a six-day week, with the
@@ -40,7 +41,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-12">
-      <h3 class="text-center card-header">Famous Names</h3>
+      <h3 class="text-center card-header font-weight-bold">Famous Names</h3>
       <div class="card-body">
         <p>
           Most Ghanaians have at least one name from this system. Ghana‘s first president, Kwame Nkrumah, was born on a
@@ -57,12 +58,12 @@
       <form>
         <div class="form-row">
           <label for="day" class="col-form-label">Day</label>
-          <input type="number" name="" id="day" placeholder="DD" class="form-control col-2">
+          <input type="number" maxlength="2" id="day" placeholder="DD" class="form-control col-2">
           <span id="dayError"></span>
           <label for="month" class="col-form-label">Month</label>
-          <input type="number" name="" id="month" placeholder="MM" class="form-control col-2">
+          <input type="number" maxlength="2" id="month" placeholder="MM" class="form-control col-2">
           <label for="year" class="col-form-label">Year</label>
-          <input type="number" name="" id="year" placeholder="YYYY" class="form-control col-2">
+          <input type="number" maxlength="4" id="year" placeholder="YYYY" class="form-control col-2">
         </div> <br>
         <div class="custom-control custom-radio">
           <input type="radio" class="custom-control-input" id="male" name="gender">
