@@ -27,13 +27,14 @@ body {
 }
 
 .formSection {
-  width: 50%;
+  width: 40%;
   margin: auto;
-  padding: 40px 0px;
+  padding: 40px 0px 10px 0px;
+  font-weight: bold;
 }
 
 .formSection button {
-  margin: 10px 0px;
+  margin: 8px 0px;
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
