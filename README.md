@@ -4,6 +4,8 @@
 
 **James Ngari N.**
 
+#### Version v1.0
+
 Click on this [link](https://jay-68.github.io/akan-naming-system/) to check out my akan-name generating website.
 
 ## Description
@@ -14,12 +16,21 @@ This website is created to generate a user's Akan name depending on their birthd
 
 ## Setup Information
 
-``` Bash
-git clone https://github.com/Jay-68/akan-naming-system
-//Extract the file in a folder
-//Open the file index.html to access the website.
-//Fill in the form to get your akan name.
-```
+    git clone https://github.com/Jay-68/akan-naming-system
+    //Extract the file in a folder
+    //Open the file index.html to access the website.
+    //Fill in the form to get your akan name.
+    
+
+## Features
+
+* After the webpage loads, the user will be able to :
+    - Get a brief background and information on the akan naming system.
+    - Fill in a form with their birthday and gender.
+    - Get their Akan name on submission of the form.
+
+    
+    
 
 ## Technologies Used
 
@@ -30,3 +41,18 @@ git clone https://github.com/Jay-68/akan-naming-system
 **Bootstrap** - For the responsiveness of the webpage at different screen widths.
 
 **Javascript** - For the functionality of the webpage including the submit action on the page.
+
+## Behaviour Driven Development
+
+| User Input     | output             |
+|--------- | ---------------   |
+|  User birthday |  |
+|  User Gender | |
+|  User Submit | Browser alerts user's Akan name. |
+
+
+## License
+
+MIT - <https://opensource.org/licenses/MIT> 
+
+&copy; James Ngari N.
