@@ -8,12 +8,10 @@ function submitButton() {
 
   let femaleNames = ['Akosua', 'Adwwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
   let gender = document.getElementsByName("gender").value;
-  alert(gender);
 
   let dayOfTheWeek = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
 
   let dayOfBirth = Math.floor(dayOfTheWeek);
-  alert(dayOfBirth);
 
   //form validation
   if (day <= 0 || day > 31) {
