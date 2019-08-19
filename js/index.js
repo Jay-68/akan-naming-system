@@ -6,6 +6,15 @@ function submitButton() {
 
   // alert(century);
 
+  function checkGender() {
+    let genSelect = document.getElementsByName("gender");
+    if (genSelect[0].checked == true) {
+      var gender = "male";
+    } else if (genSelect[1].checked == true) {
+      var gender = "female";
+    } else {
+    alert("Choose Your gender.");//Test the radio buttons
+    }
   let femaleNames = ['Akosua', 'Adwwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
   let gender = document.getElementsByName("gender").value;
 
