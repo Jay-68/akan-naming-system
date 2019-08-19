@@ -4,20 +4,14 @@ function submitButton() {
   let year = document.getElementById("year").value;
   let century = year.slice(0, 2);
 
-  // alert(century);
+  let gender = document.querySelector('input[name=gender]:checked').value;
 
-  function checkGender() {
-    let genSelect = document.getElementsByName("gender");
-    if (genSelect[0].checked == true) {
-      var gender = "male";
-    } else if (genSelect[1].checked == true) {
-      var gender = "female";
-    } else {
-    alert("Choose Your gender.");//Test the radio buttons
-    }
+  alert(gender);
+
   let femaleNames = ['Akosua', 'Adwwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-  let gender = document.getElementsByName("gender").value;
-
+  let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+  
   let dayOfTheWeek = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
 
   let dayOfBirth = Math.floor(dayOfTheWeek);
@@ -32,6 +26,7 @@ function submitButton() {
   } else if (gender == "male") {
     alert('you are male!!');
   }
+
   function checkDayOfWeek() {
     day = calculateDay();
     checkGender();
@@ -39,8 +34,7 @@ function submitButton() {
   }
 
   //arrays
-  let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+ 
 
   //get selected radio button
   function checkGender() {
