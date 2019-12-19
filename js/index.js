@@ -1,27 +1,3 @@
-function formValidate() {
-  //form validation
-  var currentYear = new Date();
-  var maxYear = currentYear.getFullYear();
-  var year = document.getElementById("year").value;
-  var day = document.getElementById("day");
-  var month = document.getElementById("month");
-  if (year > maxYear || year < 1919) {
-    alert("Invalid year");
-    document.getElementById("year").value = document.getElementById("year").value.replace(characters, "");
-    evt.preventDefault()
-  } else if (day.value > 31 || day.value <= 0 || day.value === "") {
-    alert("Invalid date!");
-    evt.preventDefault()
-  } else if (month.value > 12 || month.value === "" || month.value <= 0) {
-    alert("Invalid month!");
-    evt.preventDefault()
-  } else {
-    if (male.checked === "" || female.checked === "") {
-      alert("choose gender!");
-      evt.preventDefault();
-    };
-  }
-}
 function submitButton() {
   var cc = parseInt(document.getElementById("year").value.slice(0, 2));
   var yy = parseInt(document.getElementById("year").value.slice(2, 4));

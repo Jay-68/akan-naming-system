@@ -58,11 +58,11 @@
       <form>
         <div class="form-row">
           <label for="day" class="col-form-label">Day</label>
-          <input type="number" maxlength="2" id="day" placeholder="DD" class="form-control col-2" required>
+          <input type="number" min="1" max="31" maxlength="2" id="day" placeholder="DD" class="form-control col-2" required>
           <label for="month" class="col-form-label">Month</label>
-          <input type="number" maxlength="2" id="month" placeholder="MM" class="form-control col-2" required>
+          <input type="number" min="1" max="12" maxlength="2" id="month" placeholder="MM" class="form-control col-2" required>
           <label for="year" class="col-form-label">Year</label>
-          <input type="number" maxlength="4" id="year" placeholder="YYYY" class="form-control col-2" required>
+          <input type="number" min="1920" max="2015" maxlength="4" id="year" placeholder="YYYY" class="form-control col-2" required>
         </div> <br>
         <div class="custom-control custom-radio">
           <input type="radio" value="male" class="custom-control-input" id="male" name="gender" required>
@@ -72,7 +72,7 @@
           <input type="radio" value="female" class="custom-control-input" id="female" name="gender" required>
           <label class="custom-control-label" for="female">Female</label>
         </div>
-        <button type="submit" onclick="formValidate() ;submitButton()" class="btn btn-primary">Submit</button>
+        <button type="submit" onclick="submitButton()" class="btn btn-sm btn-outline-warning">Submit</button>
       </form>
     </div>
   </div>
